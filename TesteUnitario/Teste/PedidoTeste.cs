@@ -27,7 +27,7 @@ namespace TesteUnitario.Teste
 
         public List<PedidoDTO> ObterPedidosMock()
         {
-            var json = File.ReadAllText(@"C:\Users\Amanda Rodrigues\source\repos\UCDBProduto\TesteUnitario\Mock\Pedido.json", Encoding.GetEncoding("iso-8859-1"));
+            var json = File.ReadAllText(@"C:\Users\Amanda Rodrigues\source\repos\TDDDProduto\TesteUnitario\Mock\Pedido.json", Encoding.GetEncoding("iso-8859-1"));
             var lista = JsonConvert.DeserializeObject<List<PedidoDTO>>(json);
             return lista;
         }
